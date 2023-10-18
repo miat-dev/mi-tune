@@ -1,38 +1,94 @@
+
+:root{
+    --bg-color:#fceefa;
+    --green:#63a107;
+    --fade_red:#f9576ad2;
+    --light_pink:#e49acf;
+    --dark_green:#399214;
+    --dark_red:red;
+    --primary:#0f61dd;
+    --shade-bg-color:#fac9f2;
+}
 .App {
-  text-align: center;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App hr {
+    border: none;
+    border-top: 1.5px solid #ffffff;
+    border-bottom: 4px solid #3f5b7a;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn {
+    min-height: 85px;
+    padding: calc(6px + .2vw);
+    background-color: #3f5b7a;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.btn button {
+    position: relative;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 600;
+    letter-spacing: inherit;
+    margin: 0 1.4vw;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: transform .5s;
 }
 
-.App-link {
-  color: #61dafb;
+.btn .activemode {
+    transform: scale(1.2);
+    color: #1c1aaa;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn button::before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 90%;
+    transform: scale(.2);
+    transition: transform .6s;
+    margin-left: 4px;
+    margin-top: 35%;
+
+}
+
+.btn .activemode::before {
+    background-color: #1c1aaa;
+    transform: scale(1);
+}
+
+.music_body {
+    background-color: #271c1c;
+    color: #dbc8c8;
+}
+
+.mitune_body {
+    display: block;
+    background-color: #af66da;
+}
+
+.btn_trans {
+    background-color: var(--green);
+    cursor: pointer;
+    border: none;
+    color: var(--bg-color);
+    padding: 3px;
+    width:auto;
+}
+
+.btn_trans:focus,
+.btn_trans:active {
+    border: none;
+    outline: none;
+}
+
+.btn_trans:active {
+    background-color: transparent;
+    color:var(--green)
 }

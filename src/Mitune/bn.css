@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+.container {
+    height:550px;
+    width: 325px;
+    overflow-y: scroll;
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(3rem);
+    scroll-snap-type: y mandatory;
+    border: none;
+    border:2px solid #e05c5c;
+    border-radius: 8px;
+    background-color: #e6a3a3;
+}
+
+.tiktok {
+    position: relative;
+    align-items:center;
+    justify-items:center;
+    height: 98%;
+    width:100%;
+    scroll-snap-align: start;
+    margin-bottom: 20px;
+} 
+.tiktok video {
+    margin:3px 0 ;
+    width: 100%;
+    height: 99%;
+   
+}
+.tiktok section{
+    position:absolute;
+    max-width: 80%;
+    z-index: 5;
+    margin-left: 30px;
+    margin-top: calc(110px + 100%);
+    
+}
+.tiktok section p{
+    max-width: 100%;
+    overflow:ellipsis;
+}
+/*
+    .homebtn {
+        width: 100px;
+        height: 5px;
+        background-color: rgb(168, 166, 166);
+        border-radius: 25px;
+        position: absolute;
+      bottom: 10px;
+      left: 130px;
+       z-index: 10;
+    }
+    
+
+    .menu {
+      
+        background-color: black;
+        position: absolute;
+        left: 517px;
+        z-index: 5;
+        top: 615px;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .btn1 {
+        float: left;
+        padding: 15px;
+        margin-bottom: 10px;
+        color: rgb(218, 214, 214);
+        font-size: 0.68rem;
+    }
+
+    .fas,.far {
+        font-size: 1.5rem;
+        margin-left: 5px;
+    }
+   
+    .plus {
+        width: 23px;
+        height: 8px;
+        background-color: white;
+        margin-top: 12px;
+        border-radius: 5px;
+        margin-right: 15px;
+        margin-left: 5px;
+        color: black;
+        font-size: 2rem;
+        font-weight: bold;
+        box-shadow: inset 8px 0px 0px 0px rgb(0, 238, 255), inset -8px 0px 0px 0px rgb(255, 29, 86);
+     
+    }
+
+    .fa-plus {
+      position: absolute;
+      left: 156px;
+      top: 19px;
+    }
+    */
+    ::-webkit-scrollbar {
+        display: none;
+    }
+    

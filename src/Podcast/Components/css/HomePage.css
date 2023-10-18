@@ -1,0 +1,142 @@
+.homepage {
+    padding: 1vw;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Form CSS */
+.new_question {
+    margin: 8px ;
+    background-color: #fff;
+    padding: 10px 3vw;
+}
+
+.new_question textarea {
+    padding: 4px;
+    border: none;
+    width: 100%;
+    resize: none;
+    font-family: inherit;
+    font-size: 1.2rem;
+}
+
+textarea:focus,
+textarea:active {
+    outline: none;
+}
+
+.new_question .q_index{
+    display: flex;
+    justify-content:space-between
+}
+
+.btn_remove_question{
+    border-radius: 3px;
+    font-weight: bolder;
+    padding: 0 5px;
+    background-color: var(--dark_red);
+}
+.btn_remove_question:active{
+    color: var(--dark_red);
+}
+
+.div_ans_types {
+    position: relative;
+    display: inline-block;
+}
+.div_ans_types button {
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+.btn_ans_types {
+    position: absolute;
+    left: 40px;
+    min-width:120px;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 3px;
+    background-color: var(--green);
+    border-radius: 3px;
+    border-top: 1px solid white;
+}
+
+.btn_ans_types button {
+    margin: 0;
+    color: white;
+    margin: 0px;
+    padding:3px 4px;
+    border-top:1px solid rgb(252, 253, 252);
+    border-radius: 0;
+}
+.btn_ans_types button:first-child{
+    border-top:none;
+}
+
+.btn_ans_types button:hover {
+    background-color: var(--primary);
+}
+
+label{
+    display:flex;
+    align-items: baseline;
+}
+
+.btn_add_option{
+    background-color: var(--light_pink);
+    border-radius: 3px;
+    color:#203303;
+    margin-bottom: 3px;
+    font-weight: bold;
+}
+.btn_add_option:active{
+    color: var(--light_pink);
+}
+.btn_remove_option{
+    border-radius: 3px;
+    font-weight: bolder;
+    background-color: var(--fade_red);
+}
+.btn_remove_option:active{
+    color: var(--fade_red);
+}
+.btn_remove_option:hover{
+    background-color: var(--dark_red);
+}
+input[type=text]{
+    border:none;
+    font-family:inherit;
+    font-size: 1.2rem;
+    border-bottom:1.5px solid;
+    margin-bottom: 3px;
+
+}
+input[type=text]:focus,
+input[type=text]:active {
+    outline: none;
+}
+.btn_deploy{
+    font-size: 1.4rem;
+    font-weight:bolder;
+    margin :25px;
+    padding : 7px;
+    border-radius: 3px;
+    background-color: var(--primary);
+}
+.btn_deploy:active{
+    color:var(--primary);
+}
+
+/* Form Display */
+.form_disp *{
+    margin:10px;
+}

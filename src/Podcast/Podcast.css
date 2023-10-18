@@ -1,0 +1,9 @@
+.podcast_body {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    overflow: auto;
+}
+
+.podcast_body>div {
+    overflow: auto;
+}

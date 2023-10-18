@@ -1,0 +1,43 @@
+h3{
+    margin: 10px 3vw;
+}
+.card_row_h3_div{
+    padding-top:1vw ;
+}
+.card_row_div{
+    overflow-x: auto;
+    display: flex;
+    flex-direction: row;
+}
+/* Hide scrollbar for chrome */
+.card_row_div::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .card_row_div {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+.card_div {
+    min-width: 130px;
+    position: relative;
+    min-height: 120px;
+    max-height: auto;
+    margin: 3px;
+    padding: 3px;
+    display: grid;
+    justify-items: center;
+}
+
+img {
+    cursor: pointer;
+    max-width: 90%;
+    border-radius:8px;
+}
+.card_div span{
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    width: 80%;
+}
